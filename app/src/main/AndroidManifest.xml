@@ -25,6 +25,9 @@
         <activity android:name=".MainActivityHome">
 
         </activity>
+        <activity android:name=".MainActivityRegisterTim">
+
+        </activity>
     </application>
 
 </manifest>

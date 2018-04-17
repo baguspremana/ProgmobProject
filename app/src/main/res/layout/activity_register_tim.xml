@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityRegisterTim"
+    android:background="@drawable/shadow">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Tim"
+                android:textSize="25sp"
+                android:textColor="#b7b9bd"
+                android:id="@+id/judulDataTim"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/namaTim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Tim"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:layout_below="@id/judulDataTim"
+                android:layout_alignTop="@id/user"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Anggota Tim"
+                android:textSize="25sp"
+                android:textColor="#b7b9bd"
+                android:id="@+id/judulDataAnggotaTim"
+                android:textAlignment="center"
+                android:layout_below="@id/namaTim"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/anggota1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judulDataAnggotaTim">
+                <EditText
+                    android:id="@+id/namaAnggota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anggota 1"
+                    android:textSize="17sp"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#b7b9bd"
+                    android:layout_weight="2"
+                    android:layout_below="@id/judulDataAnggotaTim"
+                    android:layout_alignTop="@id/user"
+                    android:inputType="textEmailAddress"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPosisi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/posisi"
+                    android:spinnerMode="dropdown"
+                    android:textSize="17sp"
+                    android:textColorHint="#b7b9bd"
+                    android:textColor="#b7b9bd"
+                    android:layout_weight="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/judulDataAnggotaTim"
+                    android:layout_toRightOf="@id/namaAnggota1">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/idSteam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id Steam 1"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:inputType="text"
+                android:layout_below="@id/anggota1"
+                android:layout_alignTop="@id/pass"/>
+
+            <LinearLayout
+                android:id="@+id/anggota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idSteam1">
+                <EditText
+                    android:id="@+id/namaAnggota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anggota 2"
+                    android:textSize="17sp"
+                    android:textColor="#b7b9bd"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#b7b9bd"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/idSteam1"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPosisi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/posisi"
+                    android:spinnerMode="dropdown"
+                    android:textSize="17sp"
+                    android:textColorHint="#b7b9bd"
+                    android:textColor="#b7b9bd"
+                    android:layout_weight="3"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/idSteam1"
+                    android:layout_toRightOf="@id/namaAnggota2">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/idSteam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id Steam 2"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:inputType="text"
+                android:layout_below="@id/anggota2"/>
+
+            <LinearLayout
+                android:id="@+id/anggota3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idSteam2">
+                <EditText
+                    android:id="@+id/namaAnggota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anggota 3"
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#b7b9bd"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/idSteam2"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPosisi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/posisi"
+                    android:spinnerMode="dropdown"
+                    android:textSize="17sp"
+                    android:textColorHint="#b7b9bd"
+                    android:textColor="#b7b9bd"
+                    android:layout_weight="3"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/idSteam2"
+                    android:layout_toRightOf="@id/namaAnggota3">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/idSteam3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id Steam 3"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:inputType="text"
+                android:layout_below="@id/anggota3"/>
+
+            <LinearLayout
+                android:id="@+id/anggota4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idSteam3">
+                <EditText
+                    android:id="@+id/namaAnggota4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anggota 4"
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#b7b9bd"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/idSteam3"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPosisi4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/posisi"
+                    android:spinnerMode="dropdown"
+                    android:textSize="17sp"
+                    android:layout_weight="3"
+                    android:textColorHint="#b7b9bd"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/idSteam3"
+                    android:layout_toRightOf="@id/namaAnggota4">
+                </Spinner>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/idSteam4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id Steam 4"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:inputType="text"
+                android:layout_below="@id/anggota4"/>
+
+            <LinearLayout
+                android:id="@+id/anggota5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idSteam4">
+                <EditText
+                    android:id="@+id/namaAnggota5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anggota 5"
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#b7b9bd"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/idSteam4"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPosisi5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/posisi"
+                    android:spinnerMode="dropdown"
+                    android:textSize="17sp"
+                    android:layout_weight="3"
+                    android:textColorHint="#b7b9bd"
+                    android:textColor="#b7b9bd"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/idSteam4"
+                    android:layout_toRightOf="@id/namaAnggota5">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/idSteam5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id Steam 5"
+                android:textSize="17sp"
+                android:textColor="#b7b9bd"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#b7b9bd"
+                android:inputType="text"
+                android:layout_below="@id/anggota5"/>
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn1"
+                android:text="Sign In"
+                android:textColor="#b7b9bd"
+                android:layout_below="@id/idSteam5"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                android:elevation="40dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
