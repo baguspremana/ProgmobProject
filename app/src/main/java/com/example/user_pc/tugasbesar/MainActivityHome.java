@@ -42,12 +42,12 @@ public class MainActivityHome extends AppCompatActivity {
         });
 
         //Proses Spinner 1
-        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
-        stringposisi1=getResources().getStringArray(R.array.posisi);
-        posisi1.setPrompt("Posisi");
-        posisi1.setOnItemSelectedListener(new onItemSlectedListener(){
-
-        });
+//        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
+//        stringposisi1=getResources().getStringArray(R.array.posisi);
+//        posisi1.setPrompt("Posisi");
+//        posisi1.setOnItemSelectedListener(new onItemSlectedListener(){
+//
+//        });
     }
 
     @Override
@@ -64,15 +64,15 @@ public class MainActivityHome extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    private class onItemSlectedListener implements android.widget.AdapterView.OnItemSelectedListener {
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-
-        }
-    }
+//    private class onItemSlectedListener implements android.widget.AdapterView.OnItemSelectedListener {
+//        @Override
+//        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//        }
+//
+//        @Override
+//        public void onNothingSelected(AdapterView<?> parent) {
+//
+//        }
+//    }
 }

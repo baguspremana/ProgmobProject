@@ -269,7 +269,7 @@
                     android:spinnerMode="dropdown"
                     android:textSize="17sp"
                     android:layout_weight="3"
-                    android:textColorHint="#b7b9bd"s
+                    android:textColorHint="#b7b9bd"
                     android:textColor="#b7b9bd"
                     android:layout_marginTop="20dp"
                     android:layout_below="@id/idSteam4"
