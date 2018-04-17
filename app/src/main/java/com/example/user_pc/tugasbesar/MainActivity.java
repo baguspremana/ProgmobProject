@@ -1,6 +1,7 @@
 package com.example.user_pc.tugasbesar;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         //intent to register layout
         register = (TextView) findViewById(R.id.register);
@@ -55,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 String ePass = ePassword.getText().toString();
                 if (email.equals("admin")){
                     if (ePass.equals("admin")){
-//                        Intent login = new Intent(getApplicationContext(),MainActivity1.class);
-                        Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
+                        Intent login = new Intent(getApplicationContext(),MainActivityHome.class);
+                        startActivity(login);
+//                        Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(getApplicationContext(),"Password Anda Tidak sesuai",Toast.LENGTH_SHORT).show();
                     }

@@ -22,6 +22,9 @@
         <activity android:name=".MainActivityResetPass">
 
         </activity>
+        <activity android:name=".MainActivityHome">
+
+        </activity>
     </application>
 
 </manifest>

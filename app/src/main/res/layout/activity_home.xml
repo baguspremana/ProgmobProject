@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainActivityHome"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:background="@drawable/latar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Tema'"
+                android:textColor="#b7b9bd"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/daftarkanTim">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftarkan Tim"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des"
+                        android:layout_below="@id/judul"
+                        android:text="Daftarkan tim merupakan fitur yang digunakan untuk mendaftarkan tim anda"
+                        android:textColor="#000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar"
+                        android:src="@drawable/daftar"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/lihatBayar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Tata Cara Pembayaran"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des1"
+                        android:layout_below="@id/judul1"
+                        android:text="Lihat tata cara merupakan fitur untuk melihat cara pembayaran dari setiap tim yang berkompetisi di IT-ESEGA"
+                        android:textColor="#000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar1"
+                        android:src="@drawable/bayar"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/lihatJadwal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Jadwal"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des2"
+                        android:layout_below="@id/judul2"
+                        android:text="Lihat jadwal merupakan fitur untuk melihat seluruh rangkaian kegiatan dari kompetisi IT-ESEGA"
+                        android:textColor="#000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar2"
+                        android:src="@drawable/jadwal"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/dataTim">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Data Tim"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des3"
+                        android:layout_below="@id/judul3"
+                        android:text="Lihat data tim merupakan fitur untuk melihat seluruh tim yang mengikuti kompetisi IT-ESEGA"
+                        android:textColor="#000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar3"
+                        android:src="@drawable/data"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/juara">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Juara Sebelumnya"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des4"
+                        android:layout_below="@id/judul4"
+                        android:text="Lihat juara sebelumnya merupakan fitur untuk melihat seluruh juara dari kompetisi IT-ESEGA tahun-tahun sebelumnya"
+                        android:textColor="#000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar4"
+                        android:src="@drawable/juara"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:itemTextColor="#000"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity = "start">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
