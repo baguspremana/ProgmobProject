@@ -124,11 +124,11 @@
                     android:layout_height="wrap_content"
                     android:entries="@array/posisi"
                     android:spinnerMode="dropdown"
-                    android:textSize="17sp"
+                    android:textSize="20sp"
                     android:textColorHint="#b7b9bd"
                     android:textColor="#b7b9bd"
                     android:layout_weight="3"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:layout_below="@id/idSteam1"
                     android:layout_toRightOf="@id/namaAnggota2">
                 </Spinner>
@@ -176,7 +176,7 @@
                     android:textColorHint="#b7b9bd"
                     android:textColor="#b7b9bd"
                     android:layout_weight="3"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:layout_below="@id/idSteam2"
                     android:layout_toRightOf="@id/namaAnggota3">
                 </Spinner>
@@ -223,7 +223,7 @@
                     android:layout_weight="3"
                     android:textColorHint="#b7b9bd"
                     android:textColor="#b7b9bd"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:layout_below="@id/idSteam3"
                     android:layout_toRightOf="@id/namaAnggota4">
                 </Spinner>
@@ -269,9 +269,9 @@
                     android:spinnerMode="dropdown"
                     android:textSize="17sp"
                     android:layout_weight="3"
-                    android:textColorHint="#b7b9bd"
+                    android:textColorHint="#b7b9bd"s
                     android:textColor="#b7b9bd"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="20dp"
                     android:layout_below="@id/idSteam4"
                     android:layout_toRightOf="@id/namaAnggota5">
                 </Spinner>
