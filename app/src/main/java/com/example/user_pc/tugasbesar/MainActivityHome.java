@@ -9,12 +9,17 @@ import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
 public class MainActivityHome extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private ActionBarDrawerToggle mToggle;
     private CardView daftarkanTim;
-    final Intent[] Tekan = new Intent[1];
+
+    //variabel spinner dan array-nya
+    Spinner posisi1,posisi2,posisi3,posisi4,posisi5;
+    String[] stringposisi1,stringposisi2,stringposisi3,stringposisi4,stringposisi5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +40,14 @@ public class MainActivityHome extends AppCompatActivity {
                 startActivity(daftartim);
             }
         });
+
+        //Proses Spinner 1
+        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
+        stringposisi1=getResources().getStringArray(R.array.posisi);
+        posisi1.setPrompt("Posisi");
+        posisi1.setOnItemSelectedListener(new onItemSlectedListener(){
+
+        });
     }
 
     @Override
@@ -49,5 +62,17 @@ public class MainActivityHome extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    private class onItemSlectedListener implements android.widget.AdapterView.OnItemSelectedListener {
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
     }
 }
