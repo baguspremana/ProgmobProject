@@ -13,7 +13,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:padding="10dp">
 
@@ -21,98 +21,105 @@
                 android:id="@+id/logo"
                 android:layout_width="150dp"
                 android:layout_height="180dp"
-                android:src="@drawable/logo"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
 
             <TextView
+                android:id="@+id/tema"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="''Tema''"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="#b7b9bd"
                 android:layout_below="@id/logo"
-                android:id="@+id/tema"
+                android:layout_marginTop="5dp"
+                android:text="''Tema''"
                 android:textAlignment="center"
-                android:layout_marginTop="5dp"/>
+                android:textColor="#b7b9bd"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/user"
-                android:layout_below="@id/tema"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_account_circle"
-                android:layout_marginTop="10dp"/>
+                android:layout_below="@id/tema"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_account_circle" />
 
             <EditText
                 android:id="@+id/eMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="E-Mail"
-                android:textSize="17sp"
-                android:textColor="#b7b9bd"
-                android:layout_marginLeft="10dp"
-                android:textColorHint="#b7b9bd"
-                android:layout_toRightOf="@id/user"
                 android:layout_alignTop="@id/user"
-                android:inputType="textEmailAddress"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/user"
+                android:hint="E-Mail"
+                android:inputType="textEmailAddress"
+                android:textColor="#b7b9bd"
+                android:textColorHint="#b7b9bd"
+                android:textSize="17sp" />
 
             <ImageView
+                android:id="@+id/pass"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_lock"
-                android:id="@+id/pass"
                 android:layout_below="@id/user"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_lock" />
 
             <EditText
                 android:id="@+id/ePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:textSize="17sp"
-                android:textColor="#b7b9bd"
-                android:layout_marginLeft="10dp"
-                android:textColorHint="#b7b9bd"
-                android:inputType="textPassword"
-                android:layout_toRightOf="@id/pass"
+                android:layout_alignTop="@id/pass"
                 android:layout_below="@id/eMail"
-                android:layout_alignTop="@id/pass"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/pass"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#b7b9bd"
+                android:textColorHint="#b7b9bd"
+                android:textSize="17sp" />
 
             <ImageView
+                android:id="@+id/confirmPass"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_lock"
-                android:id="@+id/confirmPass"
                 android:layout_below="@id/pass"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_lock"
+                android:layout_marginBottom="20dp"/>
 
             <EditText
                 android:id="@+id/eConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm Password"
-                android:textSize="17sp"
-                android:textColor="#b7b9bd"
-                android:layout_marginLeft="10dp"
-                android:textColorHint="#b7b9bd"
-                android:inputType="textPassword"
-                android:layout_toRightOf="@id/confirmPass"
+                android:layout_alignTop="@id/confirmPass"
                 android:layout_below="@id/ePassword"
-                android:layout_alignTop="@id/confirmPass"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/confirmPass"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#b7b9bd"
+                android:textColorHint="#b7b9bd"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/signIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/confirmPass"
                 android:background="@drawable/btn1"
+                android:elevation="40dp"
                 android:text="Register"
                 android:textColor="#b7b9bd"
-                android:layout_below="@id/eConfirmPassword"
-                android:layout_marginTop="30dp"
                 android:textSize="17sp"
-                android:elevation="40dp"/>
-
+                android:layout_margin="16dp"/>
 
 
         </RelativeLayout>
