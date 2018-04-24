@@ -36,8 +36,18 @@ public class MainActivityHome extends AppCompatActivity {
         daftarkanTim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent daftartim = new Intent(getApplicationContext(),MainActivityRegisterTim.class);
-                startActivity(daftartim);
+                Intent daftarTim = new Intent(getApplicationContext(),MainActivityRegisterTim.class);
+                startActivity(daftarTim);
+            }
+        });
+
+        //Intent to layout halaman jadwal
+        daftarkanTim = (CardView)findViewById(R.id.lihatJadwal);
+        daftarkanTim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lihatJadwal = new Intent(getApplicationContext(),MainActivitySchedule.class);
+                startActivity(lihatJadwal);
             }
         });
 
