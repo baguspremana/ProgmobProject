@@ -16,12 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MainActivity1"></activity>
-        <activity android:name=".MainActivityResetPass"></activity>
-        <activity android:name=".MainActivityHome"></activity>
-        <activity android:name=".MainActivityRegisterTim"></activity>
-        <activity android:name=".MainActivitySchedule"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity1" />
+        <activity android:name=".MainActivityResetPass" />
+        <activity android:name=".MainActivityHome" />
+        <activity android:name=".MainActivityRegisterTim" />
+        <activity android:name=".MainActivitySchedule" />
+        <activity android:name=".MainActivityTeam"></activity>
     </application>
 
 </manifest>

@@ -51,6 +51,16 @@ public class MainActivityHome extends AppCompatActivity {
             }
         });
 
+        //Intent to layout halaman Team
+        daftarkanTim = (CardView)findViewById(R.id.dataTim);
+        daftarkanTim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lihatTim = new Intent(getApplicationContext(),MainActivityTeam.class);
+                startActivity(lihatTim);
+            }
+        });
+
         //Proses Spinner 1
 //        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
 //        stringposisi1=getResources().getStringArray(R.array.posisi);
