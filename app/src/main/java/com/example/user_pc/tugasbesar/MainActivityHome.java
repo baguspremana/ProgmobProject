@@ -61,6 +61,16 @@ public class MainActivityHome extends AppCompatActivity {
             }
         });
 
+        //Intent to layout pembayaran
+        daftarkanTim = (CardView) findViewById(R.id.lihatBayar);
+        daftarkanTim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lihatBayar = new Intent(getApplicationContext(),MainActivityPayment.class);
+                startActivity(lihatBayar);
+            }
+        });
+
         //Proses Spinner 1
 //        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
 //        stringposisi1=getResources().getStringArray(R.array.posisi);

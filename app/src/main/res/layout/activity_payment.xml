@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainActivityHome"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:background="@drawable/latar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer"
+                android:textColor="#b7b9bd"
+                android:layout_gravity="center_horizontal"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_margin="16dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/transfer">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deskripsi_transfer"
+                        android:layout_below="@id/judul_transfer"
+                        android:text="Lakukan transfer sejumlah RP. 200.000,- ke No Rekening 098xxxxxxxxx a.n Wayan Agus"
+                        android:textColor="#000"
+                        android:layout_alignLeft="@id/judul_transfer"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_transfer"
+                        android:src="@drawable/bayar"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/upload">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bukti Pembayaran"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deskripsi_upload"
+                        android:layout_below="@id/judul_upload"
+                        android:text="Upload bukti pembayaran yang telah didapat saat melakukan transfer ke web itesega.unud.ac.id pada menu dashboard peserta atau email itesega@gmail.com dengan subjek Bayar_NamaTim"
+                        android:textColor="#000"
+                        android:layout_alignLeft="@id/judul_upload"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_upload"
+                        android:src="@drawable/upload"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/konfir">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_konfir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konfirmasi"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deskripsi_konfir"
+                        android:layout_below="@id/judul_konfir"
+                        android:text="Konfirmasi bahwa anda telah mengupload bukti pembayaran dengan mengirimkan pesan ke CP Wayan Agus 081xxxxxxxxx dan isi pesan Pembayaran_NamaTim"
+                        android:textColor="#000"
+                        android:layout_alignLeft="@id/judul_konfir"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_konfir"
+                        android:src="@drawable/call"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="16dp"
+                android:background="#b7b9bd"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD"
+                android:textColor="#b7b9bd"
+                android:layout_gravity="center_horizontal"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_margin="16dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/hubungi">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_hubungi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hubungi"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deskripsi_hubungi"
+                        android:layout_below="@id/judul_hubungi"
+                        android:text="Hubungi CP Wayan Agus 081xxxxxxxxx untuk melakukan perjanjian COD"
+                        android:textColor="#000"
+                        android:layout_alignLeft="@id/judul_hubungi"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_hubungi"
+                        android:src="@drawable/pesan"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/bayar2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_bayar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bayar"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deskripsi_bayar2"
+                        android:layout_below="@id/judul_bayar2"
+                        android:text="Lakukan pembayaran saat COD dengan narahubung dan pastikan anda telah menerima kuitansi pembayaran dari narahubung"
+                        android:textColor="#000"
+                        android:layout_alignLeft="@id/judul_bayar2"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_bayar2"
+                        android:src="@drawable/bayar"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
