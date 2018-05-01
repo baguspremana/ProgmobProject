@@ -71,6 +71,16 @@ public class MainActivityHome extends AppCompatActivity {
             }
         });
 
+        //Intent to layout juara
+        daftarkanTim = (CardView) findViewById(R.id.juara);
+        daftarkanTim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lihatJuara = new Intent(getApplicationContext(),MainActivityJuara.class);
+                startActivity(lihatJuara);
+            }
+        });
+
         //Proses Spinner 1
 //        posisi1 = (Spinner)findViewById(R.id.spinnerPosisi1);
 //        stringposisi1=getResources().getStringArray(R.array.posisi);
