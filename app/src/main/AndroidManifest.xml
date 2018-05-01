@@ -23,6 +23,7 @@
         <activity android:name=".MainActivityRegisterTim" />
         <activity android:name=".MainActivitySchedule" />
         <activity android:name=".MainActivityTeam"></activity>
+        <activity android:name=".MainActivityDetailTeam"></activity>
         <activity android:name=".MainActivityPayment" />
         <activity android:name=".MainActivityJuara" />
     </application>

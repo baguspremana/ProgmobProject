@@ -34,7 +34,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:id="@+id/pendaftaran">
+                android:id="@+id/team1">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
