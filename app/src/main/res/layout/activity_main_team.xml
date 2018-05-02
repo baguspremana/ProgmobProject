@@ -77,7 +77,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:id="@+id/tm">
+                android:id="@+id/team2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -120,7 +120,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:id="@+id/penyisihan">
+                android:id="@+id/team3">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -131,7 +131,7 @@
                         android:id="@+id/nama_tim_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Tim 1"
+                        android:text="Nama Tim 3"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:textColor="#000"
@@ -163,7 +163,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="50dp"
-                android:id="@+id/semifinal">
+                android:id="@+id/team4">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -174,7 +174,7 @@
                         android:id="@+id/nama_tim_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Tim 1"
+                        android:text="Nama Tim 4"
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:textColor="#000"
