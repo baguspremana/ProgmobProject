@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -95,13 +96,22 @@ public class MainActivityHome extends AppCompatActivity {
         if (mToggle.onOptionsItemSelected(item)){
             return true;
         }
-        return super.onOptionsItemSelected(item);
+
+        int id = item.getItemId();
+        switch (id){
+            case R.id.faq:
+                Intent intent = new Intent(MainActivityHome.this, MainActivityFAQ.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
     }
 
 //    private class onItemSlectedListener implements android.widget.AdapterView.OnItemSelectedListener {

@@ -22,11 +22,12 @@
         <activity android:name=".MainActivityHome" />
         <activity android:name=".MainActivityRegisterTim" />
         <activity android:name=".MainActivitySchedule" />
-        <activity android:name=".MainActivityTeam"></activity>
-        <activity android:name=".MainActivityDetailTeam"></activity>
+        <activity android:name=".MainActivityTeam" />
+        <activity android:name=".MainActivityDetailTeam" />
         <activity android:name=".MainActivityPayment" />
         <activity android:name=".MainActivityJuara" />
-        <activity android:name=".MainActivityJuaraDetail"></activity>
+        <activity android:name=".MainActivityJuaraDetail" />
+        <activity android:name=".MainActivityFAQ"></activity>
     </application>
 
 </manifest>

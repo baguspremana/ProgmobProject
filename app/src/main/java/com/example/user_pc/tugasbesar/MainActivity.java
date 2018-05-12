@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -61,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                     if (ePass.equals("admin")){
                         Intent login = new Intent(getApplicationContext(),MainActivityHome.class);
                         startActivity(login);
+                        eMail.setText("");
+                        ePassword.setText("");
 //                        Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(getApplicationContext(),"Password Anda Tidak sesuai",Toast.LENGTH_SHORT).show();
@@ -71,4 +76,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.faq:
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
+    }*/
 }
