@@ -11,7 +11,6 @@ public class MainActivityPayment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        getSupportActionBar().setTitle("CARA PEMBAYARAN | IT-ESEGA");
     }
 }
