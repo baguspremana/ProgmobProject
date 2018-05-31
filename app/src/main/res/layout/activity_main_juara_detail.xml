@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivityJuaraDetail"
+    android:id="@+id/layout_detail_juara"
     android:background="@drawable/latar">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rv_detail_juara">
-
 
     </android.support.v7.widget.RecyclerView>
 

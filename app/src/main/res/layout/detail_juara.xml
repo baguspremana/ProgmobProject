@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
     android:id="@+id/cv_detail_juara">
 
     <RelativeLayout
@@ -37,8 +39,6 @@
                 android:layout_height="80dp"
                 android:id="@+id/logo_tim_juara"
                 android:src="@drawable/btn1"
-                android:layout_below="@+id/detail_team_juara"
-                android:layout_toRightOf="@+id/foto_tim_juara"
                 android:padding="10dp"
                 android:layout_weight="3"
                 />
@@ -48,10 +48,8 @@
                 android:layout_height="80dp"
                 android:id="@+id/foto_tim_juara"
                 android:src="@drawable/btn1"
-                android:layout_below="@+id/detail_team_juara"
                 android:padding="10dp"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1"/>
         </LinearLayout>
 
 
@@ -69,9 +67,11 @@
             android:layout_below="@+id/gambar_team"/>
 
         <View
+            android:id="@+id/pembatas"
             android:layout_width="match_parent"
             android:layout_height="5dp"
             android:background="#000"
+            android:layout_margin="10dp"
             android:layout_below="@+id/nama_team_juara"/>
 
         <TextView
@@ -85,14 +85,14 @@
             android:gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="5dp"
-            android:paddingTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@+id/nama_team_juara"/>
 
 
         <ImageView
             android:layout_width="50sp"
             android:layout_height="50sp"
-            android:id="@+id/gambar_anggota_team_1"
+            android:id="@+id/gambar_juara_team_1"
             android:src="@drawable/anggota"
             android:layout_marginTop="20px"
             android:layout_marginLeft="20dp"
@@ -107,28 +107,28 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="#000"
-            android:layout_alignTop="@+id/gambar_anggota_team_1"
-            android:layout_toRightOf="@+id/gambar_anggota_team_1"
+            android:layout_alignTop="@+id/gambar_juara_team_1"
+            android:layout_toRightOf="@+id/gambar_juara_team_1"
             android:layout_marginLeft="10dp"
             android:layout_below="@+id/anggota_team"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/posisi_juara_1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/gambar_juara_team_1"
+            android:layout_alignLeft="@+id/anggota_juara_1"
             android:layout_below="@id/anggota_juara_1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/gambar_juara_team_1"
             android:text="Posisi"
             android:textColor="#000"
-            android:layout_toRightOf="@+id/gambar_anggota_team_1"
-            android:layout_marginTop="10dp"
-            android:layout_alignBottom="@+id/gambar_anggota_team_1"
-            android:layout_alignLeft="@+id/anggota_juara_1"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <ImageView
             android:layout_width="50sp"
             android:layout_height="50sp"
-            android:id="@+id/gambar_anggota_team_2"
+            android:id="@+id/gambar_juara_team_2"
             android:src="@drawable/anggota"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"
@@ -144,8 +144,8 @@
             android:textStyle="bold"
             android:textColor="#000"
             android:layout_marginLeft="10dp"
-            android:layout_alignTop="@+id/gambar_anggota_team_2"
-            android:layout_toRightOf="@+id/gambar_anggota_team_2"
+            android:layout_alignTop="@+id/gambar_juara_team_2"
+            android:layout_toRightOf="@+id/gambar_juara_team_2"
             android:layout_below="@+id/posisi_juara_1"/>
 
         <TextView
@@ -156,20 +156,20 @@
             android:text="Posisi"
             android:textColor="#000"
             android:layout_alignLeft="@+id/anggota_juara_2"
-            android:layout_alignBottom="@+id/gambar_anggota_team_2"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/gambar_anggota_team_2"
+            android:layout_alignBottom="@+id/gambar_juara_team_2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/gambar_juara_team_2"
             android:textSize="14sp" />
 
         <ImageView
             android:layout_width="50sp"
             android:layout_height="50sp"
-            android:id="@+id/gambar_anggota_team_3"
+            android:id="@+id/gambar_juara_team_3"
             android:src="@drawable/anggota"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/gambar_anggota_team_2"/>
+            android:layout_below="@+id/gambar_juara_team_2"/>
 
         <TextView
             android:id="@+id/anggota_juara_3"
@@ -179,9 +179,9 @@
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#000"
-            android:layout_alignTop="@+id/gambar_anggota_team_3"
+            android:layout_alignTop="@+id/gambar_juara_team_3"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/gambar_anggota_team_3"
+            android:layout_toRightOf="@+id/gambar_juara_team_3"
             android:layout_below="@+id/posisi_juara_2"/>
 
         <TextView
@@ -192,20 +192,20 @@
             android:text="Posisi"
             android:textColor="#000"
             android:layout_alignLeft="@+id/anggota_juara_3"
-            android:layout_marginTop="10dp"
-            android:layout_alignBottom="@+id/gambar_anggota_team_3"
-            android:layout_toRightOf="@+id/gambar_anggota_team_3"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@+id/gambar_juara_team_3"
+            android:layout_toRightOf="@+id/gambar_juara_team_3"
             android:textSize="14sp" />
 
         <ImageView
             android:layout_width="50sp"
             android:layout_height="50sp"
-            android:id="@+id/gambar_anggota_team_4"
+            android:id="@+id/gambar_juara_team_4"
             android:src="@drawable/anggota"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/gambar_anggota_team_3"/>
+            android:layout_below="@+id/gambar_juara_team_3"/>
 
         <TextView
             android:id="@+id/anggota_juara_4"
@@ -215,9 +215,9 @@
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#000"
-            android:layout_alignTop="@+id/gambar_anggota_team_4"
+            android:layout_alignTop="@+id/gambar_juara_team_4"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/gambar_anggota_team_4"
+            android:layout_toRightOf="@+id/gambar_juara_team_4"
             android:layout_below="@+id/posisi_juara_3"/>
 
         <TextView
@@ -228,20 +228,20 @@
             android:text="Posisi"
             android:textColor="#000"
             android:layout_alignLeft="@+id/anggota_juara_4"
-            android:layout_alignBottom="@+id/gambar_anggota_team_4"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/gambar_anggota_team_4"
+            android:layout_alignBottom="@+id/gambar_juara_team_4"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/gambar_juara_team_4"
             android:textSize="14sp" />
 
         <ImageView
             android:layout_width="50sp"
             android:layout_height="50sp"
-            android:id="@+id/gambar_anggota_team_5"
+            android:id="@+id/gambar_juara_team_5"
             android:src="@drawable/anggota"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/gambar_anggota_team_4"/>
+            android:layout_below="@+id/gambar_juara_team_4"/>
 
         <TextView
             android:id="@+id/anggota_juara_5"
@@ -251,9 +251,9 @@
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#000"
-            android:layout_alignTop="@+id/gambar_anggota_team_5"
+            android:layout_alignTop="@+id/gambar_juara_team_5"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/gambar_anggota_team_5"
+            android:layout_toRightOf="@+id/gambar_juara_team_5"
             android:layout_below="@+id/posisi_juara_4"/>
 
         <TextView
@@ -264,9 +264,9 @@
             android:text="Posisi"
             android:textColor="#000"
             android:layout_alignLeft="@+id/anggota_juara_5"
-            android:layout_marginTop="10dp"
-            android:layout_alignBottom="@+id/gambar_anggota_team_5"
-            android:layout_toRightOf="@+id/gambar_anggota_team_5"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@+id/gambar_juara_team_5"
+            android:layout_toRightOf="@+id/gambar_juara_team_5"
             android:textSize="14sp"/>
     </RelativeLayout>
 
