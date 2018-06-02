@@ -27,7 +27,9 @@
         <activity android:name=".MainActivityPayment" />
         <activity android:name=".MainActivityJuara" />
         <activity android:name=".MainActivityJuaraDetail" />
-        <activity android:name=".MainActivityFAQ"></activity>
+        <activity android:name=".MainActivityFAQ" />
+        <activity android:name=".MainActivityDataTeam" />
+        <activity android:name=".MainActivityAbout"></activity>
     </application>
 
 </manifest>

@@ -35,7 +35,7 @@ public class MainActivityJuaraDetail extends AppCompatActivity {
     public void LisTeamDetail() {
         switch (position){
             case 0:
-                listTeam.add(new DetailTeamJuara(R.drawable.juara, R.drawable.btn1, "Juara IT-ESEGA 2015", "Team A",
+                listTeam.add(new DetailTeamJuara(R.drawable.logo_juara_a, R.drawable.tim_a, "Juara IT-ESEGA 2015", "Team A",
                         R.drawable.anggota, "Agus", "Tingker",
                         R.drawable.anggota, "Wayan", "Depan",
                         R.drawable.anggota, "Made", "Belakang",
@@ -43,7 +43,7 @@ public class MainActivityJuaraDetail extends AppCompatActivity {
                         R.drawable.anggota, "Ketut", "Samping"));
                 break;
             case 1:
-                listTeam.add(new DetailTeamJuara(R.drawable.juara, R.drawable.btn1, "Juara IT-ESEGA 2016", "Team A",
+                listTeam.add(new DetailTeamJuara(R.drawable.logo_juara_b, R.drawable.tim_b, "Juara IT-ESEGA 2016", "Team A",
                         R.drawable.anggota, "Agus", "Tingker",
                         R.drawable.anggota, "Wayan", "Depan",
                         R.drawable.anggota, "Made", "Belakang",
@@ -51,7 +51,7 @@ public class MainActivityJuaraDetail extends AppCompatActivity {
                         R.drawable.anggota, "Ketut", "Samping"));
                 break;
             case 2:
-                listTeam.add(new DetailTeamJuara(R.drawable.juara, R.drawable.btn1, "Juara IT-ESEGA 2017", "Team A",
+                listTeam.add(new DetailTeamJuara(R.drawable.logo_juara_c, R.drawable.tim_c, "Juara IT-ESEGA 2017", "Team A",
                         R.drawable.anggota, "Agus", "Tingker",
                         R.drawable.anggota, "Wayan", "Depan",
                         R.drawable.anggota, "Made", "Belakang",

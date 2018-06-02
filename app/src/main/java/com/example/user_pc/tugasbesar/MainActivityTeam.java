@@ -78,11 +78,21 @@ public class MainActivityTeam extends AppCompatActivity {
     }
 
     public void ListTeam() {
-        lisTeam.add(new HomeTeam(R.drawable.juara, "Team A"));
-        lisTeam.add(new HomeTeam(R.drawable.juara, "Team B"));
-        lisTeam.add(new HomeTeam(R.drawable.juara, "Team C"));
-        lisTeam.add(new HomeTeam(R.drawable.juara, "Team D"));
-        lisTeam.add(new HomeTeam(R.drawable.juara, "Team E"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_a, "Team A"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_b, "Team B"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_c, "Team C"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_d, "Team D"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_e, "Team E"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_f, "Team F"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_g, "Team G"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_h, "Team H"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_i, "Team I"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_j, "Team J"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_k, "Team K"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_l, "Team L"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_m, "Team M"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_n, "Team N"));
+        lisTeam.add(new HomeTeam(R.drawable.logo_o, "Team O"));
 
         loadRecyclerView();
     }

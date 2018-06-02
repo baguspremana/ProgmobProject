@@ -2,6 +2,9 @@ package com.example.user_pc.tugasbesar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +16,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-public class MainActivityHome extends AppCompatActivity {
+public class MainActivityHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawer;
     private ActionBarDrawerToggle mToggle;
     private CardView daftarkanTim;
@@ -89,6 +92,13 @@ public class MainActivityHome extends AppCompatActivity {
 //        posisi1.setOnItemSelectedListener(new onItemSlectedListener(){
 //
 //        });
+
+        setNavigationViewListener();
+    }
+
+    private void setNavigationViewListener() {
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_home);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -111,6 +121,23 @@ public class MainActivityHome extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id_nav = item.getItemId();
+        switch (id_nav){
+            case R.id.data2:
+                Intent intent = new Intent(MainActivityHome.this, MainActivityDataTeam.class);
+                startActivity(intent);
+                break;
+            case R.id.data:
+                Intent intent1 = new Intent(MainActivityHome.this, MainActivityAbout.class);
+                startActivity(intent1);
+                break;
+        }
+        mDrawer.closeDrawer(GravityCompat.START);
         return true;
     }
 

@@ -67,9 +67,9 @@ public class MainActivityJuara extends AppCompatActivity {
     }
 
     public void ListJuara() {
-        listJuara.add(new HomeJuara(R.drawable.juara, "IT-ESEGA 2015", "Team A"));
-        listJuara.add(new HomeJuara(R.drawable.juara, "IT-ESEGA 2016", "Team B"));
-        listJuara.add(new HomeJuara(R.drawable.juara, "IT-ESEGA 2017", "Team C"));
+        listJuara.add(new HomeJuara(R.drawable.logo_juara_a, "IT-ESEGA 2015", "Team A"));
+        listJuara.add(new HomeJuara(R.drawable.logo_juara_b, "IT-ESEGA 2016", "Team B"));
+        listJuara.add(new HomeJuara(R.drawable.logo_juara_c, "IT-ESEGA 2017", "Team C"));
 
         loadRecyclerViewJuara();
     }

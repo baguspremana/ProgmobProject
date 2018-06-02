@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#b7b9bd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Team"
+            android:textColor="#131313"
+            android:layout_centerHorizontal="true"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:paddingTop="12dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/detail_data_team_name"/>
+
+        <View
+            android:id="@+id/pembatasan1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/detail_data_team_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gambar_team"
+            android:orientation="vertical"
+            android:layout_below="@+id/pembatasan1">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/logo_data_tim"
+                android:src="@drawable/logo"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/foto_data_tim"
+                android:src="@drawable/tim_a"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/nama_team"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/gambar_team"/>
+
+        <TextView
+            android:id="@+id/anggota_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Team"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:layout_below="@+id/nama_team"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/gambar_anggota_data_team_1"
+            android:src="@drawable/anggota"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/anggota_team"/>
+
+        <TextView
+            android:id="@+id/anggota_data_tim_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Tim 1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignTop="@id/gambar_anggota_data_team_1"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/anggota_team"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posisi_data_team_1"
+            android:layout_below="@id/anggota_data_tim_1"
+            android:text="Posisi"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_1"
+            android:layout_alignLeft="@id/anggota_data_tim_1"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_1"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

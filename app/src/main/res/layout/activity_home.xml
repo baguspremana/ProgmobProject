@@ -261,7 +261,8 @@
         android:background="#fff"
         app:itemTextColor="#000"
         app:menu="@menu/drawermenu"
-        android:layout_gravity = "start">
+        android:layout_gravity = "start"
+        android:id="@+id/nav_home">
 
     </android.support.design.widget.NavigationView>
 

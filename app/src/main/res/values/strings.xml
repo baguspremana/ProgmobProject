@@ -4,13 +4,10 @@
     <string name="close">Close</string>
 
     <string-array name="posisi">
-        <item>Nasi Goreng</item>
-        <item>Ayam Goreng</item>
-        <item>Ayam Bakar</item>
-        <item>Ikan Gorang</item>
-        <item>Ikan Bakar</item>
-        <item>Batagor</item>
-        <item>Sate Ayam</item>
-        <item>Yang lain</item>
+        <item>Hard Carry</item>
+        <item>Solo Mid</item>
+        <item>Offlaner</item>
+        <item>Roaming Support</item>
+        <item>Pure Support</item>
     </string-array>
 </resources>
