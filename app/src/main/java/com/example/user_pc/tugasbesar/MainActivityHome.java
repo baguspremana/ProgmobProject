@@ -16,10 +16,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
+import com.example.user_pc.tugasbesar.Models.DataTeam;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivityHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawer;
     private ActionBarDrawerToggle mToggle;
     private CardView daftarkanTim;
+
+    List<DataTeam> myTeam = new ArrayList<>();
+    private static final String ARRAYLIST_MY_TEAM_EXTRA = "ARRAY_MY_TEAM";
 
     //variabel spinner dan array-nya
     Spinner posisi1,posisi2,posisi3,posisi4,posisi5;
@@ -128,10 +137,6 @@ public class MainActivityHome extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id_nav = item.getItemId();
         switch (id_nav){
-            case R.id.data2:
-                Intent intent = new Intent(MainActivityHome.this, MainActivityDataTeam.class);
-                startActivity(intent);
-                break;
             case R.id.data:
                 Intent intent1 = new Intent(MainActivityHome.this, MainActivityAbout.class);
                 startActivity(intent1);

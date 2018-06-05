@@ -1,9 +1,12 @@
 package com.example.user_pc.tugasbesar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 
 import com.example.user_pc.tugasbesar.Adapter.DetailTeamAdapter;
 import com.example.user_pc.tugasbesar.Models.DetailTeam;
@@ -22,6 +25,10 @@ public class MainActivityDetailTeam extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_team_detail);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setTitle("DETAIL TEAM | IT-ESEGA");
 
@@ -164,6 +171,21 @@ public class MainActivityDetailTeam extends AppCompatActivity {
     public void loadRecyclerView() {
         adapter = new DetailTeamAdapter(listTeam, this);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(MainActivityDetailTeam.this, MainActivityTeam.class);
+                startActivity(intent);
+                return true;
+            default :
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
 }

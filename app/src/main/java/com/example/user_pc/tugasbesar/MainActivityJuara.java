@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -17,7 +18,6 @@ import java.util.List;
 
 public class MainActivityJuara extends AppCompatActivity {
 
-//    private Button btn2015,btn2016,btn2017;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
 
@@ -28,6 +28,10 @@ public class MainActivityJuara extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juara);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         getSupportActionBar().setTitle("JUARA TAHUN SEBELUMNYA | IT-ESEGA");
 
         recyclerView = (RecyclerView) findViewById(R.id.rvJuara);
@@ -37,33 +41,6 @@ public class MainActivityJuara extends AppCompatActivity {
         listJuara = new ArrayList<>();
 
         ListJuara();
-
-        /*btn2015 = (Button) findViewById(R.id.btn2015);
-        btn2016 = (Button) findViewById(R.id.btn2016);
-        btn2017 = (Button) findViewById(R.id.btn2017);
-
-        btn2015.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent view_detail_juara2015 = new Intent(getApplicationContext(),MainActivityJuaraDetail.class);
-                startActivity(view_detail_juara2015);
-            }
-        });
-        btn2016.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent view_detail_juara2016 = new Intent(getApplicationContext(),MainActivityJuaraDetail.class);
-                startActivity(view_detail_juara2016);
-            }
-        });
-
-        btn2017.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent view_detail_juara2017 = new Intent(getApplicationContext(),MainActivityJuaraDetail.class);
-                startActivity(view_detail_juara2017);
-            }
-        });*/
     }
 
     public void ListJuara() {
@@ -77,5 +54,20 @@ public class MainActivityJuara extends AppCompatActivity {
     public void loadRecyclerViewJuara() {
         adapter = new JuaraAdapter(listJuara, this);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(MainActivityJuara.this, MainActivityHome.class);
+                startActivity(intent);
+                return true;
+            default :
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 }

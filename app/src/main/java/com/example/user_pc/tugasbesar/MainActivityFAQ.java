@@ -1,10 +1,12 @@
 package com.example.user_pc.tugasbesar;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import com.example.user_pc.tugasbesar.Adapter.MyAdapter;
@@ -31,6 +33,10 @@ public class MainActivityFAQ extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_faq);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         getSupportActionBar().setTitle("FAQ | IT-ESEGA");
 
         recyclerView = (RecyclerView) findViewById(R.id.myRecyclerView);
@@ -54,5 +60,20 @@ public class MainActivityFAQ extends AppCompatActivity {
             parentObject.add(title);
         }
         return parentObject;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(MainActivityFAQ.this, MainActivityHome.class);
+                startActivity(intent);
+                return true;
+            default :
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 }

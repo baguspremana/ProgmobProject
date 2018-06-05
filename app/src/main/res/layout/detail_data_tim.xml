@@ -6,7 +6,8 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:layout_marginBottom="16dp"
-    android:layout_marginTop="16dp">
+    android:layout_marginTop="16dp"
+    android:id="@+id/cv_data_detail_team">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -108,14 +109,328 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/label_posisi_1"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_1"
+            android:text="Posisi : "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@id/anggota_data_tim_1"
+            android:layout_toRightOf="@+id/gambar_anggota_team_1"
+            android:layout_alignLeft="@id/anggota_data_tim_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/posisi_data_team_1"
             android:layout_below="@id/anggota_data_tim_1"
             android:text="Posisi"
             android:textColor="#000"
-            android:layout_toRightOf="@+id/gambar_anggota_data_team_1"
-            android:layout_alignLeft="@id/anggota_data_tim_1"
+            android:layout_toRightOf="@+id/label_posisi_1"
             android:textSize="14sp"
+            android:layout_marginLeft="5dp"
             android:layout_alignBottom="@id/gambar_anggota_data_team_1"/>
+
+        <TextView
+            android:id="@+id/label_steam_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="ID Steam : "
+            android:layout_below="@+id/anggota_data_tim_1"
+            android:layout_toRightOf="@+id/posisi_data_team_1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/id_steam_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID STEAM"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/label_steam_1"
+            android:layout_below="@+id/anggota_data_tim_1"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/gambar_anggota_data_team_2"
+            android:src="@drawable/anggota"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/posisi_data_team_1"/>
+
+        <TextView
+            android:id="@+id/anggota_data_tim_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Tim 2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/gambar_anggota_data_team_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_2"
+            android:layout_below="@+id/posisi_data_team_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_posisi_2"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_2"
+            android:text="Posisi : "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@id/anggota_data_tim_2"
+            android:layout_toRightOf="@+id/gambar_anggota_team_2"
+            android:layout_alignLeft="@id/anggota_data_tim_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posisi_data_team_2"
+            android:layout_below="@id/anggota_data_tim_2"
+            android:text="Posisi"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/gambar_anggota_data_team_2"
+            android:layout_toRightOf="@+id/label_posisi_2"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/label_steam_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="ID Steam : "
+            android:layout_below="@+id/anggota_data_tim_2"
+            android:layout_toRightOf="@+id/posisi_data_team_2"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/id_steam_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID STEAM"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/label_steam_2"
+            android:layout_below="@+id/anggota_data_tim_2"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/gambar_anggota_data_team_3"
+            android:src="@drawable/anggota"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/posisi_data_team_2"/>
+
+        <TextView
+            android:id="@+id/anggota_data_tim_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Tim 2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/gambar_anggota_data_team_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_3"
+            android:layout_below="@+id/posisi_data_team_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_posisi_3"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_3"
+            android:text="Posisi : "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@id/anggota_data_tim_3"
+            android:layout_toRightOf="@+id/gambar_anggota_team_3"
+            android:layout_alignLeft="@id/anggota_data_tim_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posisi_data_team_3"
+            android:layout_below="@id/anggota_data_tim_3"
+            android:text="Posisi"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/gambar_anggota_data_team_3"
+            android:layout_toRightOf="@+id/label_posisi_3"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/label_steam_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="ID Steam : "
+            android:layout_below="@+id/anggota_data_tim_3"
+            android:layout_toRightOf="@+id/posisi_data_team_3"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/id_steam_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID STEAM"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/label_steam_3"
+            android:layout_below="@+id/anggota_data_tim_3"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/gambar_anggota_data_team_4"
+            android:src="@drawable/anggota"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/posisi_data_team_3"/>
+
+        <TextView
+            android:id="@+id/anggota_data_tim_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Tim 2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/gambar_anggota_data_team_4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_4"
+            android:layout_below="@+id/posisi_data_team_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_posisi_4"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_4"
+            android:text="Posisi : "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@id/anggota_data_tim_4"
+            android:layout_toRightOf="@+id/gambar_anggota_team_4"
+            android:layout_alignLeft="@id/anggota_data_tim_4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posisi_data_team_4"
+            android:layout_below="@id/anggota_data_tim_4"
+            android:text="Posisi"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/gambar_anggota_data_team_4"
+            android:layout_toRightOf="@+id/label_posisi_4"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/label_steam_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="ID Steam : "
+            android:layout_below="@+id/anggota_data_tim_4"
+            android:layout_toRightOf="@+id/posisi_data_team_4"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/id_steam_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID STEAM"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/label_steam_4"
+            android:layout_below="@+id/anggota_data_tim_4"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/gambar_anggota_data_team_5"
+            android:src="@drawable/anggota"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/posisi_data_team_4"/>
+
+        <TextView
+            android:id="@+id/anggota_data_tim_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggota Tim 2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/gambar_anggota_data_team_5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/gambar_anggota_data_team_5"
+            android:layout_below="@+id/posisi_data_team_4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_posisi_5"
+            android:layout_alignBottom="@id/gambar_anggota_data_team_5"
+            android:text="Posisi : "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_below="@id/anggota_data_tim_5"
+            android:layout_toRightOf="@+id/gambar_anggota_team_5"
+            android:layout_alignLeft="@id/anggota_data_tim_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posisi_data_team_5"
+            android:layout_below="@id/anggota_data_tim_5"
+            android:text="Posisi"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/gambar_anggota_data_team_5"
+            android:layout_toRightOf="@+id/label_posisi_5"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/label_steam_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="ID Steam : "
+            android:layout_below="@+id/anggota_data_tim_5"
+            android:layout_toRightOf="@+id/posisi_data_team_5"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/id_steam_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID STEAM"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/label_steam_5"
+            android:layout_below="@+id/anggota_data_tim_5"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
 
     </RelativeLayout>
 

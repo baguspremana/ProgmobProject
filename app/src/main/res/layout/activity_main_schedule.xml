@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,66 +26,73 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:id="@+id/pendaftaran">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
-                    android:background="#b7b9bd">
+                    android:background="#b7b9bd"
+                    android:padding="10dp">
+
                     <TextView
                         android:id="@+id/judul_pendaftaran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pendaftaran"
-                        android:textSize="17sp"
-                        android:textStyle="bold"
-                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
                         android:layout_marginLeft="80dp"
-                        android:layout_marginBottom="5dp"/>
+                        android:text="Pendaftaran"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
                     <TextView
+                        android:id="@+id/tgl_pendaftaran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/tgl_pendaftaran"
                         android:layout_below="@id/judul_pendaftaran"
-                        android:text="3 April 2018 - 3 Mei 2018"
-                        android:textColor="#000"
-                        android:layout_toRightOf="@id/tgl_pendaftaran_iv"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:textSize="14sp"/>
+                        android:layout_toRightOf="@id/tgl_pendaftaran_iv"
+                        android:text="3 April 2018 - 3 Mei 2018"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
                     <TextView
+                        android:id="@+id/alamat_pendaftaran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/alamat_pendaftaran"
                         android:layout_below="@id/tgl_pendaftaran"
-                        android:text="www.itesega.unud.ac.id, IT-ESEGA Mobile"
-                        android:textColor="#000"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_toRightOf="@id/lokasi_pendaftaran_iv"
-                        android:textSize="14sp"/>
+                        android:text="www.itesega.unud.ac.id, IT-ESEGA Mobile"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
                     <ImageView
+                        android:id="@+id/gambar_pendaftaran"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:id="@+id/gambar_pendaftaran"
-                        android:src="@drawable/daftar"
-                        android:layout_alignParentLeft="true"/>
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/daftar" />
+
                     <ImageView
                         android:id="@+id/tgl_pendaftaran_iv"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/date_purple"
                         android:layout_below="@id/judul_pendaftaran"
-                        android:layout_marginLeft="80dp" />
+                        android:layout_marginLeft="80dp"
+                        android:src="@drawable/date_purple" />
+
                     <ImageView
                         android:id="@+id/lokasi_pendaftaran_iv"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/location"
                         android:layout_below="@id/tgl_pendaftaran_iv"
                         android:layout_marginLeft="80dp"
-                        android:layout_marginTop="5dp"/>
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/location" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -140,7 +147,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:id="@+id/gambar_tm"
-                        android:src="@drawable/daftar"
+                        android:src="@drawable/data"
                         android:layout_alignParentLeft="true"/>
                     <ImageView
                         android:id="@+id/tgl_tm_iv"
@@ -211,7 +218,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:id="@+id/gambar_penyisihan"
-                        android:src="@drawable/daftar"
+                        android:src="@drawable/anggota"
                         android:layout_alignParentLeft="true"/>
                     <ImageView
                         android:id="@+id/tgl_penyisihan_iv"
@@ -237,7 +244,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="16dp"
                 android:id="@+id/semifinal">
 
                 <RelativeLayout
@@ -282,7 +289,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:id="@+id/gambar_semifinal"
-                        android:src="@drawable/daftar"
+                        android:src="@drawable/semifinal"
                         android:layout_alignParentLeft="true"/>
                     <ImageView
                         android:id="@+id/tgl_semifinal_iv"
@@ -303,19 +310,80 @@
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/babakFinal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="#b7b9bd">
+                    <TextView
+                        android:id="@+id/judul_babakFinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Babak Final"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="80dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tgl_Final"
+                        android:layout_below="@id/judul_babakFinal"
+                        android:text="28 Mei 2018"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/tgl_semifinal_v"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alamat_final"
+                        android:layout_below="@id/tgl_Final"
+                        android:text="Acyuta Gubug Gaming, JLn. Diponegoro, Denpasar"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/lokasi_semifinal_v"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/gambar_Final"
+                        android:src="@drawable/babak_final"
+                        android:layout_alignParentLeft="true"/>
+                    <ImageView
+                        android:id="@+id/tgl_semifinal_v"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/date_purple"
+                        android:layout_below="@id/judul_babakFinal"
+                        android:layout_marginLeft="80dp" />
+                    <ImageView
+                        android:id="@+id/lokasi_semifinal_v"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/location"
+                        android:layout_below="@id/tgl_semifinal_v"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
     </ScrollView>
 
-    <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/header"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="#fff"
-        app:itemTextColor="#000"
-        app:menu="@menu/drawermenu"
-        android:layout_gravity = "start">
 
-    </android.support.design.widget.NavigationView>
-
-</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

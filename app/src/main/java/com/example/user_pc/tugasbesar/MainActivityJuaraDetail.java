@@ -1,9 +1,12 @@
 package com.example.user_pc.tugasbesar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;;import com.example.user_pc.tugasbesar.Adapter.DetailJuaraAdapter;
+import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;;import com.example.user_pc.tugasbesar.Adapter.DetailJuaraAdapter;
 import com.example.user_pc.tugasbesar.Models.DetailTeamJuara;
 
 import java.util.ArrayList;
@@ -20,6 +23,10 @@ public class MainActivityJuaraDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_juara_detail);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setTitle("DETAIL JUARA SEBELUMNYA | IT-ESEGA");
 
@@ -66,6 +73,21 @@ public class MainActivityJuaraDetail extends AppCompatActivity {
     public void loadRecyclerView() {
         adapter = new DetailJuaraAdapter(listTeam, this);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                Intent intent = new Intent(MainActivityJuaraDetail.this, MainActivityJuara.class);
+                startActivity(intent);
+                return true;
+            default :
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
 }
