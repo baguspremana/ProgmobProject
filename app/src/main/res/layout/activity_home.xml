@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="'Tema'"
+                android:text="'Break through the ocean'"
                 android:textColor="#b7b9bd"
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"

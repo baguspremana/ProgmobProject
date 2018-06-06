@@ -30,11 +30,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/logo"
                 android:layout_marginTop="5dp"
-                android:text="''Tema''"
+                android:text="''Break through the ocean''"
                 android:textAlignment="center"
                 android:textColor="#b7b9bd"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
 
             <ImageView
                 android:id="@+id/user"
