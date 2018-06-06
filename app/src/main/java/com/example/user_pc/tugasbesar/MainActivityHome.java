@@ -141,6 +141,10 @@ public class MainActivityHome extends AppCompatActivity implements NavigationVie
                 Intent intent1 = new Intent(MainActivityHome.this, MainActivityAbout.class);
                 startActivity(intent1);
                 break;
+            case R.id.data1:
+                Intent intent = new Intent(MainActivityHome.this, MainActivity.class);
+                startActivity(intent);
+                break;
         }
         mDrawer.closeDrawer(GravityCompat.START);
         return true;
