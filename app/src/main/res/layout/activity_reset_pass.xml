@@ -27,8 +27,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="''Tema''"
-                android:textSize="25sp"
+                android:text="''Break through the ocean''"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#b7b9bd"
                 android:layout_below="@id/logo"
@@ -42,7 +42,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/ic_account_circle"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="16dp" />
 
             <EditText
