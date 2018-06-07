@@ -103,21 +103,21 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="16dp"
                 android:layout_toRightOf="@id/confirmPass"
-                android:hint="Confirm Password"
+                android:hint="Konfirmasi Password"
                 android:inputType="textPassword"
                 android:textColor="#b7b9bd"
                 android:textColorHint="#b7b9bd"
                 android:textSize="17sp" />
 
             <Button
-                android:id="@+id/signIn"
+                android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/confirmPass"
                 android:background="@drawable/btn1"
                 android:elevation="40dp"
-                android:text="Register"
+                android:text="Daftar"
                 android:textColor="#b7b9bd"
                 android:textSize="17sp"
                 android:layout_margin="16dp"/>

@@ -62,11 +62,11 @@
 
 
             <Button
-                android:id="@+id/signIn"
+                android:id="@+id/resetPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn1"
-                android:text="Send Reset Password Link"
+                android:text="Kirim tautan"
                 android:textColor="#b7b9bd"
                 android:layout_below="@id/eMail"
                 android:textSize="15sp"
